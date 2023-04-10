@@ -1,6 +1,7 @@
 import {Component} from 'react'
+
 import Cookies from 'js-cookie'
-import {Redirect} from 'react-router-dom'
+import {Redirect, Link} from 'react-router-dom'
 
 import './index.css'
 
@@ -106,6 +107,7 @@ class LoginForm extends Component {
             alt="website logo"
             className="website-logo"
           />
+
           <form className="form-container" onSubmit={this.onSubmitForm}>
             <div className="input-container">{this.renderUsername()}</div>
             <div className="input-container">{this.renderPassword()}</div>
@@ -114,6 +116,15 @@ class LoginForm extends Component {
             </button>
             {showSubmitError && <p className="error-msg">*{errorMsg}</p>}
           </form>
+          <Link to="/demo">
+            <button
+              className="login-button1"
+              type="button"
+              onClick={this.onClickDemo}
+            >
+              My App Demo
+            </button>
+          </Link>
         </div>
       </div>
     )

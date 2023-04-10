@@ -1,0 +1,47 @@
+.video-container {
+  background-color: #0a0b36;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.responsive-container {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.button {
+  color: white;
+  margin-top: 20px;
+  border: solid white 1px;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.button1 {
+  background-color: #4f46e5;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+}
+.react-player {
+  width: 10vw;
+  height: 10vh;
+}
